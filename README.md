@@ -49,5 +49,7 @@ Accédez à l'application sur:  http://localhost:8888/UnIndex.php
 
 ---
 
-Nous vous remercions de vos commentaires et de l'intérêt que vous portez au poste ici à l'université. Bonne chance.
+Nous vous remercions de vos commentaires et de l'intérêt que vous portez à notre institution. 
+
+Bonne chance.
 
