@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/Sy/lib/SySetEnv.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/Un/UnIndex.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/Un/lib/BoTexte.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/Un/lib/UnAffRubriques.php" charset="ISO-8859-1" />
-  </component>
-</project>
