@@ -10,9 +10,11 @@ Le fichier utilise certaines librairies qui se trouvent dans d'autres applicatio
 
 Certains fichiers ont été inclus à titre d'exemple mais ne sont pas utilisés pour cette page (*.classe.php).
 
+:warning: **Important**: S'il vous plaît, ne faites pas de fork de ce repository et ne publiez pas votre solution à ce défi n'importe où. Si vous lisez ceci, cela signifie que vous avez été contacté personnellement par un membre de l'équipe DSM-DEV-INT avec des des instructions sur la façon de soumettre votre solution.
+
 ### Tâches
 
-Votre tache consiste à faire du refactoring de cette application.
+Votre tâche consiste à faire du refactoring de cette application.
 
 Les points principaux à prendre en compte :
 
@@ -46,4 +48,8 @@ Lancez un serveur PHP.
     php -S localhost:8888
 
 Accédez à l'application sur:  http://localhost:8888/UnIndex.php
+
+---
+
+Nous vous remercions de vos commentaires et de l'intérêt que vous portez au poste ici à l'université. Bonne chance.
 
