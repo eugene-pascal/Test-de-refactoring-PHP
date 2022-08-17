@@ -4,11 +4,11 @@ Ce repository est un extract de Unisciences (Un), une application publique de co
 
 https://applicationspub.unil.ch/interpub/noauth/php/Un/UnIndex.php?LanCode=37
 
-Ce demo de l'application marche sur une seule page PHP (UnIndex.php). Les appels à d'autres pages ont été enlevés.
+Cette demo de l'application marche sur une seule page PHP (UnIndex.php). Les appels à d'autres pages ont été enlevés.
 
-Le fichier utilise certaines librairies qui se trouvent dans d'autres application (Sy,Bo).
+Le fichier utilise certaines librairies qui se trouvent dans d'autres répertoires (Sy,Bo).
 
-:warning: **Important**: S'il vous plaît, ne faites pas de fork de ce repository et ne publiez pas votre solution à ce défi n'importe où. Si vous lisez ceci, cela signifie que vous avez été contacté personnellement par un membre de l'équipe LEGACY avec des des instructions sur la façon de soumettre votre solution.
+:warning: **Important**: S'il vous plaît, ne faites pas de fork de ce repository et ne publiez pas votre solution à ce défi ou que ce soit. Si vous lisez ceci, cela signifie que vous avez été contacté personnellement par un membre de l'équipe LEGACY avec des instructions sur la façon de soumettre votre solution.
 
 ### Tâches
 
@@ -18,11 +18,11 @@ Les points principaux à prendre en compte :
 
 - Factoriser ce qui est factorisable.
 - Enlever le code inutile. Attention aux modifications qui pourraient déborder sur d'autres pages.
-- Utilisez les classes disponibles là où c'est possible. Si besoin, créez d'autres classes ou rajoutez des méthodes aux classes existantes.
-- Uniformisez le plus possible le code.
-- Le cache APC n'est plus utilisé, enlevez toute référence et utilisation.
-- Essayez le plus possible de séparer la logique de l'affichage.
-- Une modification récente a cassé l'affichage des personnes, corrigez l'erreur.
+- Utiliser les classes disponibles là où c'est possible. Si besoin, créer d'autres classes ou ajouter des méthodes aux classes existantes.
+- Uniformiser le plus possible le code.
+- Le cache APC n'est plus utilisé, enlever toute référence et utilisation.
+- Essayer le plus possible de séparer la logique de l'affichage.
+- Une modification récente a cassé l'affichage des personnes, corriger l'erreur.
 
 ### Informations
 
