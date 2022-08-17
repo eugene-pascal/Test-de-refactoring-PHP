@@ -8,7 +8,7 @@ Ce demo de l'application marche sur une seule page PHP (UnIndex.php). Les appels
 
 Le fichier utilise certaines librairies qui se trouvent dans d'autres application (Sy,Bo).
 
-:warning: **Important**: S'il vous plaît, ne faites pas de fork de ce repository et ne publiez pas votre solution à ce défi n'importe où. Si vous lisez ceci, cela signifie que vous avez été contacté personnellement par un membre de l'équipe DSM-DEV-INT avec des des instructions sur la façon de soumettre votre solution.
+:warning: **Important**: S'il vous plaît, ne faites pas de fork de ce repository et ne publiez pas votre solution à ce défi n'importe où. Si vous lisez ceci, cela signifie que vous avez été contacté personnellement par un membre de l'équipe LEGACY avec des des instructions sur la façon de soumettre votre solution.
 
 ### Tâches
 
