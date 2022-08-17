@@ -1,0 +1,68 @@
+[
+  {
+    "unid": 350,
+    "urnom": "Centre interdisciplinaire de recherche sur la montagne",
+    "tri": "2608010110",
+    "andeb": 2019,
+    "anfin": null,
+    "urlalias": "CIRM",
+    "abrege": "CIRM",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 382,
+    "urnom": "Centre interdisciplinaire de recherche sur le climat",
+    "tri": "2608010111",
+    "andeb": 2021,
+    "anfin": null,
+    "urlalias": "CLIMACT",
+    "abrege": "CLIMACT",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 177,
+    "urnom": "Unité de mathématiques",
+    "tri": "2608010121",
+    "andeb": 2007,
+    "anfin": null,
+    "urlalias": "UMAT",
+    "abrege": "UMAT",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 276,
+    "urnom": "Institut de géographie et durabilité",
+    "tri": "26080121",
+    "andeb": 2012,
+    "anfin": null,
+    "urlalias": "IGD",
+    "abrege": "IGD",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 273,
+    "urnom": "Institut des dynamiques de la surface terrestre",
+    "tri": "26080122",
+    "andeb": 2013,
+    "anfin": null,
+    "urlalias": "IDYST",
+    "abrege": "IDYST",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 274,
+    "urnom": "Institut des sciences de la Terre",
+    "tri": "26080123",
+    "andeb": 2012,
+    "anfin": null,
+    "urlalias": "ISTE",
+    "abrege": "ISTE",
+    "longueurtri": 8,
+    "majf": "t"
+  }
+]

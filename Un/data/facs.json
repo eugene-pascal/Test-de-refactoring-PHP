@@ -1,0 +1,47 @@
+[
+  {
+    "unid": 351,
+    "urnom": "Direction",
+    "tri": "2600"
+  },
+  {
+    "unid": 75,
+    "urnom": "Faculté de théologie et de sciences des religions",
+    "tri": "2601"
+  },
+  {
+    "unid": 106,
+    "urnom": "Faculté de droit, des sciences criminelles et d'administration publique",
+    "tri": "2602"
+  },
+  {
+    "unid": 89,
+    "urnom": "Faculté des lettres",
+    "tri": "2603"
+  },
+  {
+    "unid": 90,
+    "urnom": "Faculté des SSP",
+    "tri": "2604"
+  },
+  {
+    "unid": 88,
+    "urnom": "Faculté des HEC",
+    "tri": "2605"
+  },
+  {
+    "unid": 83,
+    "urnom": "Faculté de biologie et de médecine",
+    "tri": "2607"
+  },
+  {
+    "unid": 174,
+    "urnom": "Faculté des géosciences et de l'environnement",
+    "tri": "2608"
+  },
+  {
+    "unid": 160,
+    "urnom": "Autres institutions",
+    "tri": "28"
+  }
+]

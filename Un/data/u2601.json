@@ -1,0 +1,79 @@
+[
+  {
+    "unid": 362,
+    "urnom": "Centre interdisciplinaire de recherche en éthique",
+    "tri": "2601010105",
+    "andeb": 2019,
+    "anfin": null,
+    "urlalias": "CIRE",
+    "abrege": "CIRE",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 11,
+    "urnom": "Centre interdisciplinaire d'histoire et de sciences des religions",
+    "tri": "2601010107",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "CIHSR",
+    "abrege": "CIHSR",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 363,
+    "urnom": "Centre interdisciplinaire d'études juives",
+    "tri": "2601010109",
+    "andeb": 2019,
+    "anfin": null,
+    "urlalias": "CIEJ",
+    "abrege": "CIEJ",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 117,
+    "urnom": "Institut romand des sciences bibliques",
+    "tri": "26010102",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "IRSB",
+    "abrege": "IRSB",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 262,
+    "urnom": "Institut d'histoire et anthropologie des religions",
+    "tri": "26010104",
+    "andeb": 2010,
+    "anfin": null,
+    "urlalias": "IHAR",
+    "abrege": "IHAR",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 263,
+    "urnom": "Institut de sciences sociales des religions",
+    "tri": "26010105",
+    "andeb": 2010,
+    "anfin": null,
+    "urlalias": "ISSR",
+    "abrege": "ISSR",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 307,
+    "urnom": "Institut lémanique de théologie pratique",
+    "tri": "26010106",
+    "andeb": 2015,
+    "anfin": null,
+    "urlalias": "ILTP",
+    "abrege": "ILTP",
+    "longueurtri": 8,
+    "majf": "t"
+  }
+]

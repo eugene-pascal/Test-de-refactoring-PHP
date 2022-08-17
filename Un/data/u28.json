@@ -1,0 +1,46 @@
+[
+  {
+    "unid": 18,
+    "urnom": "Musée de géologie",
+    "tri": "28000002",
+    "andeb": 1997,
+    "anfin": null,
+    "urlalias": "MGEO",
+    "abrege": "Musée de géologie",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 140,
+    "urnom": "CEDIDAC",
+    "tri": "28000003",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "CEDIDAC",
+    "abrege": "CEDIDAC",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 95,
+    "urnom": "Institut suisse pour l'étude de l'art",
+    "tri": "28000006",
+    "andeb": 1997,
+    "anfin": null,
+    "urlalias": "SIK-ISEA",
+    "abrege": "SIK-ISEA",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 197,
+    "urnom": "Fondation suisse pour la recherche en sciences sociales",
+    "tri": "28000008",
+    "andeb": 2008,
+    "anfin": null,
+    "urlalias": "FORS",
+    "abrege": "FORS",
+    "longueurtri": 8,
+    "majf": "t"
+  }
+]

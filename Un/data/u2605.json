@@ -1,0 +1,145 @@
+[
+  {
+    "unid": 239,
+    "urnom": "Département de comportement organisationnel",
+    "tri": "2605010304",
+    "andeb": 2009,
+    "anfin": null,
+    "urlalias": "OB",
+    "abrege": "OB",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 240,
+    "urnom": "Département de comptabilité et contrôle",
+    "tri": "2605010305",
+    "andeb": 2009,
+    "anfin": null,
+    "urlalias": "DCC",
+    "abrege": "DCC",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 241,
+    "urnom": "Département de marketing",
+    "tri": "2605010306",
+    "andeb": 2009,
+    "anfin": null,
+    "urlalias": "DMK",
+    "abrege": "DMK",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 242,
+    "urnom": "Département des opérations",
+    "tri": "2605010307",
+    "andeb": 2009,
+    "anfin": null,
+    "urlalias": "DO",
+    "abrege": "DO",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 243,
+    "urnom": "Département de stratégie",
+    "tri": "2605010308",
+    "andeb": 2009,
+    "anfin": null,
+    "urlalias": "SGS",
+    "abrege": "SGS",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 244,
+    "urnom": "Département de droit des affaires et fiscalité",
+    "tri": "2605010309",
+    "andeb": 2009,
+    "anfin": null,
+    "urlalias": "DDAF",
+    "abrege": "D-DAF",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 114,
+    "urnom": "Département d'économie",
+    "tri": "2605010401",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "DE",
+    "abrege": "DEEP",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 194,
+    "urnom": "Professeurs honoraires HEC",
+    "tri": "260502",
+    "andeb": 2008,
+    "anfin": null,
+    "urlalias": "URHEC",
+    "abrege": "Unités de recherches HEC",
+    "longueurtri": 6,
+    "majf": "t"
+  },
+  {
+    "unid": 24,
+    "urnom": "Département des systèmes d'information",
+    "tri": "26050201",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "DESI",
+    "abrege": "DESI",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 23,
+    "urnom": "Département de finance",
+    "tri": "26050202",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "DF",
+    "abrege": "DF",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 74,
+    "urnom": "Institut d'économie appliquée",
+    "tri": "26050203",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "CREA",
+    "abrege": "CREA",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 98,
+    "urnom": "Département de sciences actuarielles",
+    "tri": "26050204",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "DSA",
+    "abrege": "DSA",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 96,
+    "urnom": "Institut d'économie et management de la santé",
+    "tri": "26050206",
+    "andeb": 2001,
+    "anfin": null,
+    "urlalias": "IEMS",
+    "abrege": "IEMS",
+    "longueurtri": 8,
+    "majf": "t"
+  }
+]

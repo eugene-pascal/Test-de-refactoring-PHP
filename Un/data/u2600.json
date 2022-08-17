@@ -1,0 +1,24 @@
+[
+  {
+    "unid": 372,
+    "urnom": "Centre de soutien à l'enseignement",
+    "tri": "2600010106",
+    "andeb": 2020,
+    "anfin": null,
+    "urlalias": "CSE",
+    "abrege": "CSE",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 176,
+    "urnom": "ColLaboratoire",
+    "tri": "26004060",
+    "andeb": 2007,
+    "anfin": null,
+    "urlalias": "ColLAB",
+    "abrege": "ColLaboratoire",
+    "longueurtri": 8,
+    "majf": "t"
+  }
+]

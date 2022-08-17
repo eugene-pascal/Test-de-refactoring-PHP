@@ -1,0 +1,90 @@
+[
+  {
+    "unid": 336,
+    "urnom": "Droit, criminalité et sécurité des technologies de l'information",
+    "tri": "2602010102",
+    "andeb": 2018,
+    "anfin": null,
+    "urlalias": "DCS",
+    "abrege": "DCS",
+    "longueurtri": 10,
+    "majf": "t"
+  },
+  {
+    "unid": 87,
+    "urnom": "Centre de droit comparé, européen et international",
+    "tri": "26020102",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "CDCEI",
+    "abrege": "CDCEI",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 166,
+    "urnom": "Centre de droit public",
+    "tri": "26020110",
+    "andeb": 1996,
+    "anfin": null,
+    "urlalias": "DPUBLIC",
+    "abrege": "Droit public",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 63,
+    "urnom": "Centre de droit privé",
+    "tri": "26020111",
+    "andeb": 2002,
+    "anfin": null,
+    "urlalias": "DROITPRIVE",
+    "abrege": "Droit privé",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 326,
+    "urnom": "Centre de droit pénal",
+    "tri": "26020112",
+    "andeb": 2017,
+    "anfin": null,
+    "urlalias": "DPENAL",
+    "abrege": "Droit pénal",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 327,
+    "urnom": "Science forensique",
+    "tri": "26021091",
+    "andeb": 2017,
+    "anfin": null,
+    "urlalias": "SF",
+    "abrege": "SF",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 328,
+    "urnom": "Criminologie",
+    "tri": "26021092",
+    "andeb": 2017,
+    "anfin": null,
+    "urlalias": "CRIMINO",
+    "abrege": "Criminologie",
+    "longueurtri": 8,
+    "majf": "t"
+  },
+  {
+    "unid": 293,
+    "urnom": "Institut de hautes études en administration publique",
+    "tri": "260220",
+    "andeb": 2014,
+    "anfin": null,
+    "urlalias": "IDHEAP",
+    "abrege": "IDHEAP",
+    "longueurtri": 6,
+    "majf": "t"
+  }
+]
