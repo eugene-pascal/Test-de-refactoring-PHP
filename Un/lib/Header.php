@@ -273,9 +273,8 @@ $unil_links = [
                                     <?php
                                     foreach ($menus as $link => $label):
                                         $class_visible = (in_array($link, $menusHideMobile)) ? "hidden-xs " : "";
-                                        $class_active = (is_null(BoUtil::getRequest('list')) && empty(strip_tags($label))) ||
-                                        (strpos($link,
-                                                BoUtil::getRequest('list', 'not set')) !== false) ? "active " : "";
+                                        $class_active = (($listParamValue = BoUtil::getRequest('list')) === null && empty(strip_tags($label))) ||
+                                        (!empty($listParamValue) && strpos($link, $listParamValue) !== false) ? "active " : "";
                                         $class = "";
                                         if ($class_active != "" || $class_visible != "") {
                                             $class = 'class="' . $class_visible . $class_active . '"';

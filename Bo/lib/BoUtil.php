@@ -7,86 +7,88 @@ class BoUtil
 {
     /**
      * Retourne la valeur $_REQUEST de la clé $name ou null si elle n'existe pas.
+     * Si la clé $name est manquante ou null, on  retourne $_REQUEST comme un tableau
      *
-     * @param $name
+     * @param string|null $name
+     * @param mixed $defaulted
      * @return mixed|null
      */
-    public static function getRequest($name = null, $value = null)
+    public static function getRequest($name = null, $defaulted = null)
     {
         $val = null;
         if (is_null($name)) {
-            $val = $_REQUEST;
+            return $_REQUEST;
         } else {
             if (isset($_REQUEST[$name])) {
                 $val = $_REQUEST[$name];
             } else {
-                if (!is_null($value)) {
-                    $val = $value;
-
+                if (!is_null($defaulted)) {
+                    $val = $defaulted;
                 }
             }
         }
-
         return $val;
     }
 
     /**
      * Modifie la valeur de la clé $name dans le tableau $_REQUEST
      *
-     * @param $name
-     * @param null $value
+     * @param string $name
+     * @param mixed $value
      */
     public static function setRequest($name, $value = null)
     {
-        if (is_null($name)) {
+        if (!empty($name)) {
             if (is_array($value)) {
-                $_REQUEST = $value;
-            } elseif (is_null($value)) {
-                $_REQUEST = null;
-            }
-        } else {
-            if (is_array($name)) {
-                $_REQUEST = array_merge($_REQUEST, $name);
-            } elseif (!empty($name)) {
-                if ($value === null) {
-                    unset($_REQUEST[$name]);
+                $_REQUEST = array_merge($_REQUEST, array($name => $value));
+            } else {
+                if (is_null($value)) {
+                    if (isset($_REQUEST[$name])) {
+                        unset($_REQUEST[$name]);
+                    }
                 } else {
-                    $_REQUEST[$name] = $value;
+                    $_REQUEST[$name] = is_numeric($value) ? (int)$value : $value ;
                 }
             }
         }
     }
 
-    public static function getServer($name, $value = null)
+    /**
+     * Retourne la valeur %_SERVER de la clé $name ou null si elle n'existe pas.
+     *
+     * @param string $name
+     * @param mixed $defaulted
+     * @return mixed|null
+     */
+    public static function getServer($name, $defaulted = null)
     {
         $val = null;
         if (isset($_SERVER[$name])) {
             $val = $_SERVER[$name];
-        }else{
-            if (!is_null($value)) {
-                $val = $value;
+        } else {
+            if (isset($defaulted)) {
+                $val = $defaulted;
             }
         }
-
         return $val;
     }
 
     /**
      * Retourne la valeur $GLOBALS de la clé $name ou null si elle n'existe pas.
      *
-     * @param $name
-     * @param $defaultvalue
+     * @param string $name
+     * @param mixed $defaulted
      * @return mixed|null
      */
-    public static function getGlobal($name, $defaultvalue = null)
+    public static function getGlobal($name, $defaulted = null)
     {
         $val = null;
-        if (isset($GLOBALS[$name]))
+        if (isset($GLOBALS[$name])) {
             $val = $GLOBALS[$name];
-        elseif (!is_null($defaultvalue))
-            $val = $defaultvalue;
-
-
+        }
+        elseif (isset($defaulted)) {
+            $val = $defaulted;
+        }
         return $val;
     }
 
@@ -94,16 +96,19 @@ class BoUtil
      * Ajoute une valeur au tableau associatif contenant les références sur toutes les variables globales
      * actuellement définies dans le contexte d'exécution global du script.
      *
-     * @param $name string
-     * @param $value mixed
+     * @param string $name
+     * @param mixed $value
      */
     public static function setGlobal($name, $value = null)
     {
-        if ($value === null) { unset ($GLOBALS[$name]); } else {$GLOBALS[$name] = $value;}
+        if (!empty($name) && is_string($name)) {
+            if (is_null($value)) {
+                if (isset($GLOBALS[$name])) {
+                    unset($GLOBALS[$name]);
+                }
+            } else {
+                $GLOBALS[$name] = is_numeric($value) ? (int)$value : $value;
+            }
+        }
     }
-
-
-
 }
-
-?>
