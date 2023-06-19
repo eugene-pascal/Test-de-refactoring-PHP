@@ -1,11 +1,6 @@
 </div>
-
-
-<!-- share -->
 <?php
-
 $share_link = BoUtil::getServer("REQUEST_SCHEME") . "://" . BoUtil::getServer("HTTP_HOST") . urlencode(BoUtil::getServer("REQUEST_URI"));
-
 ?>
 <div class="row">
     <div class="col-md-3 col-md-offset-9">
@@ -41,18 +36,13 @@ $share_link = BoUtil::getServer("REQUEST_SCHEME") . "://" . BoUtil::getServer("H
             </a>
         </div>
     </div>
-
 </div>
 
 <!-- footer -->
-
 <div class="row">
-
     <div class="col-md-12">
         <div id="footer1">
-
             <div class="row">
-
                 <div class="col-xs-12 col-sm-4">
                     <div id="v14linksbottoma" class="postaddress1"> Unicentre - CH-1015 Lausanne<br>
                         Suisse<br>
@@ -60,11 +50,8 @@ $share_link = BoUtil::getServer("REQUEST_SCHEME") . "://" . BoUtil::getServer("H
                         Fax.&nbsp;+41 21 692&nbsp;26 15<br>
                     </div>
                 </div>
-
                 <div class="col-xs-12 col-sm-8">
-
                     <div class="row">
-
                         <div class="col-xs-4 col-sm-5">
                             <div id="v14linksbottom1">
                                 <a href="mailto:unisciences@unil.ch" class="liens">Contact</a><br>
@@ -72,7 +59,6 @@ $share_link = BoUtil::getServer("REQUEST_SCHEME") . "://" . BoUtil::getServer("H
                                    class="liens">Annuaires</a><br>
                             </div>
                         </div>
-
                         <div class="col-xs-5 col-sm-5">
                             <div id="v14linksbottom1" style="margin-left: 3px;">
                                 <a href="https://www.unil.ch/central/home/legalinformation.html" class="liens">Informations
@@ -84,56 +70,27 @@ $share_link = BoUtil::getServer("REQUEST_SCHEME") . "://" . BoUtil::getServer("H
                                 </a><br>
                             </div>
                         </div>
-
                         <div class="col-xs-3 col-sm-2">
                             <div id="vd">
                                 <a href="http://www.vd.ch"><img src="images/etat-vaud-logo.svg" alt="Canton de Vaud"
                                                                 border="0" width="39" height="60"></a>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </div>
-
 </div>
-
 <!-- swissuniversity-->
-
 <div class="row">
-
     <div class="col-md-12">
         <div id="swissu1">
             <a href="http://www.swissuniversities.ch"><img src="images/swissuniversities-logo.svg"
                                                            alt="Swiss University" border="0" width="96" height="11"></a>
         </div>
     </div>
-
 </div>
 
-</div>
-
-<script type="text/javascript">
-<?php
-if (BoUtil::getGlobal('SY_JAVASCRIPT_FUNCTIONS')) {
-    print BoUtil::getGlobal('SY_JAVASCRIPT_FUNCTIONS');
-}
-
-// Méthode de démarrage de jQuery:
-if (BoUtil::getGlobal('SY_JQUERY_DOCUMENT_LOADS') && is_array(BoUtil::getGlobal('SY_JQUERY_DOCUMENT_LOADS'))) {
-    // On appelle jQuery par son nom complet pour �viter les conflits avec d'autres librairies JS:
-    print 'jQuery(document).ready(function($){' . "\n";
-    foreach (BoUtil::getGlobal('SY_JQUERY_DOCUMENT_LOADS') as $documentLoad) {
-        print $documentLoad . "\n";
-    }
-    print '});' . "\n";
-}
-?>
-</script>
 </body>
 </html>

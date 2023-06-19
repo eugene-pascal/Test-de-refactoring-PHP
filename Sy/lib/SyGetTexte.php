@@ -32,7 +32,8 @@ class SyGetTexte
         $TabName,
         $Tooltip = false,
         $jqueryTooltypePath = "../Bo/js/jquery-tooltip/"
-    ) {
+    )
+    {
 
         if (is_null(BoUtil::getRequest('LanCode')) || empty(BoUtil::getRequest('LanCode', ''))) {
             BoUtil::setRequest('LanCode', 37);
@@ -71,9 +72,9 @@ class SyGetTexte
             3320 => 'Savoirs & Performances'
         ];
 
-        if(key_exists($TitreId, $labels)){
+        if (key_exists($TitreId, $labels)) {
             $label = $labels[$TitreId];
-        }else{
+        } else {
             $label = $TitreId;
         }
         return $label;
@@ -97,5 +98,3 @@ class SyGetTexte
         return SyGetTexte::GetLibelle(101);
     } // Fin GetError
 }
-
-?>

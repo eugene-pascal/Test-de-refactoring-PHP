@@ -1,3 +1,10 @@
+<?php
+
+/**
+ * Modèle pour la page d'accueil
+ */
+
+?>
 <td valign="top" width="100%">
     <img src="/images/image_unisciences_homepage.jpg" border="0" width="100%"
          alt="Photo ambiance"/>

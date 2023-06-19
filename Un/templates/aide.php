@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Modèle pour la page d'Aide
+ */
+
+?>
+<?php
 if ($this->getLang() == 37) {
     $Titre1 = "Aide";
     $Ligne1 = "La base de données Unisciences regroupe des informations scientifiques sur l'ensemble des unités et des collaborateurs rattachés à l'Université de Lausanne.";

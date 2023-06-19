@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Modèle pour la page Liste de personnes
+ */
+
 $alpha = array(
     "A",
     "B",
@@ -28,6 +32,7 @@ $alpha = array(
     "Y",
     "Z"
 );
+
 $accent_min = array(
     'é',
     'è',
@@ -58,6 +63,7 @@ $accent_min = array(
     'Û',
     'Ü'
 );
+
 $accent_maj = array(
     'E',
     'E',
@@ -92,6 +98,7 @@ $accent_maj = array(
 $display = "<h1>" . SyGetTexte::GetLibelle(6) . "</h1>\n";
 $largSecTab = "345";
 
+// liens alphabétiques rapides
 foreach ($alpha as $i => $lettre) {
     if ($i !== 0) {
         $display .= " | ";
@@ -99,52 +106,54 @@ foreach ($alpha as $i => $lettre) {
     $display .= "<a href=\"#" . $lettre . "\" class=\"abc\">" . trim($lettre) . "</a>\n";
 }
 
-$previousPernum = -1;
+$prevPersonalNumber = -1;
 $carac_old = '';
 foreach ($this->data as $key => $pers) {
-    if ($previousPernum == $pers['pernum']) {
+    // Ignorer la même personne
+    if ($prevPersonalNumber == $pers['pernum']) {
         continue;
     }
+    $personalNumer = $pers['pernum'];
+    $prevPersonalNumber = $personalNumer;
+    $personalNom = $pers['pernom'];
+    $personalPrenom = $pers['perprenom'];
 
-    $PerNum = $pers['pernum'];
-    $previousPernum = $PerNum;
-    $PerNom = $pers['pernom'];
-    $PerPrenom = $pers['perprenom'];
-    $carac = str_replace($accent_min, $accent_maj, mb_substr($PerNom, 0, 1, 'utf-8'));
+    // Selon le faux alphabet de la langue française si la première lettre est une lettre avec un accent
+    // alors nous la remplaçons par une lettre sans accent
+    $carac = str_replace($accent_min, $accent_maj, mb_substr($personalNom, 0, 1, 'utf-8'));
 
-    if (strtolower($carac) != strtolower($carac_old)) {
+    if (strtolower($carac) !== strtolower($carac_old)) {
+        // lien vers le haut
         if (!empty($carac_old)) {
             $display .= "</table>\n";
             $display .= "<p align=\"right\"><a href=\"#Top\"><img src=\"/images/up_button.gif\" width=\"25\" height=\"23\" border=\"0\" alt=\"Pour remonter\"/></a></p>\n";
         }
+        // titre avant le début d'une nouvelle lettre
         $display .= "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"2\" style=\"margin-top: 8px; \" summary=\"Liste de personnes dont le nom commence par la lettre " . $carac . "\">\n";
         $display .= "<tr>\n";
         $display .= "<td valign=\"top\" class=\"table_first_title\" width=\"209\">" . SyGetTexte::GetLibelle(8) . "<a name=\"" . $carac . "\"></a></td>\n";
         $display .= "<td valign=\"top\" class=\"table_second_title\" width=\"" . $largSecTab . "\">" . SyGetTexte::GetLibelle(9) . "</td>\n";
         $display .= "</tr>\n";
     }
-
     $display .= "<tr>\n";
-    $display .= "<td valign=\"top\" class=\"bottomdashed2\">" . $PerNom . ' ' . $PerPrenom . "</td>\n";
-
+    $display .= "<td valign=\"top\" class=\"bottomdashed2\">" . $personalNom . ' ' . $personalPrenom . "</td>\n";
     $display .= "<td valign=\"top\" class=\"bottomdashed2\">";
 
     $currKey = $key;
     $existNext = true;
-    $arrayFonnom = array();
+    $tableauDeFonnom = array();
+    // passez le tableau pour obtenir toutes les valeurs "fonnom" du même person 
     while ($existNext) {
-        if (isset($this->data[$currKey]) && $this->data[$currKey]['pernum'] == $PerNum) {
-            $arrayFonnom[] = $this->data[$currKey++]['fonnom'];
+        if (isset($this->data[$currKey]) && $this->data[$currKey]['pernum'] == $personalNumer) {
+            $tableauDeFonnom[] = $this->data[$currKey++]['fonnom'];
         } else {
             $existNext = false;
         }
     }
-
-    $display .= implode(', ', $arrayFonnom);
+    $display .= implode(', ', $tableauDeFonnom);
     $display .= "</td>\n";
     $display .= "</tr>\n";
     $carac_old = $carac;
-
 }
 $display .= "</table>\n";
 $display .= "<br />\n";

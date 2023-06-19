@@ -1,4 +1,9 @@
 <?php
+/**
+ * Modèle pour la page Liste des unités
+ */
+?>
+<?php
 echo "<h1>" . SyGetTexte::GetLibelle(7) . "</h1>\n";
 ?>
 <div class="show-hide-all">
@@ -10,20 +15,22 @@ echo "<h1>" . SyGetTexte::GetLibelle(7) . "</h1>\n";
 <div class="panel-group unil-accordeon" role="tablist" aria-multiselectable="true">
 <?php
     foreach ($this->data as $myFacult) {
+        // Obtenir des données de la requête SQL
         $myUnitArray = (new SySQLStmt('./data/u'.$myFacult["tri"].'.json'))->GetArray();
 
         foreach ($myUnitArray as $key => $myUnit) {
             // définir des variables par défaut pour chaque itération
-            $UrNom = $myUnit['urnom'];
-            $Abrege = ' (' . $myUnit['urlalias'] . ')';
-            $hierarchie = '';
+            $urNom = $myUnit['urnom'];
+            $abregeNom = ' (' . $myUnit['urlalias'] . ')';
+            $offsetInSpace = '';
             $displayUnit = true;
             $isParent = false;
+            // cet élément est parent
             if ($myUnit['majf'] === 'f') {
                 $triParent = $myUnit['tri'];
             }
 
-            // le premier pas
+            // Le premier pas voici le parent principal
             if ($key === 0 && ($key_id = md5($myUnit['unid']))) {
                 echo '
                     <div class="faq collapsed" id="acchead-'.$key_id.'" data-toggle="collapse"
@@ -38,24 +45,30 @@ echo "<h1>" . SyGetTexte::GetLibelle(7) . "</h1>\n";
             }
 
             if (!empty($triParent) && strstr($myUnit['tri'], $triParent) !== false) {
+                // voici les éléments du deuxième niveau
                 if ($myUnit['tri'] !== $triParent) {
                     $displayUnit = false;
-                    $hierarchie = str_repeat('&nbsp;',4);
+                    $offsetInSpace = str_repeat('&nbsp;',4);
                 } else {
+                    // ici, nous définissons l'élément parent du premier niveau
                     $isParent = true;
                 }
             }
-            echo '<p'.((!$displayUnit) ? ' class="'.$triParent.'" style="display:none;"' : "").'>';
-            if (!$isParent) {
-                echo "$hierarchie<span>$UrNom.$Abrege</span>";
-            } else {
+            // Si $displayUnit === false puis ne pas afficher les éléments du deuxième niveau
+            echo '<p'.(($displayUnit) ? '': ' class="'.$triParent.'" style="display:none;"' ).'>';
+            if ($isParent) {
+                // voici le nœud parent de premier niveau
                 echo '
                     <span class="clickable" data-parent-id="'.$triParent.'" onclick="myFunctionText('.$triParent.')">
-                        <span class="nothing"><span class="caret"></span></span> '.$hierarchie.$UrNom.$Abrege.'
+                        <span class="nothing"><span class="caret"></span></span> '.$offsetInSpace.$urNom.$abregeNom.'
                     </span><br>';
+            } else {
+                // voici le élément du deuxième niveau
+                echo "$offsetInSpace<span>$urNom.$abregeNom</span>";
             }
             echo '</p>';
 
+            // Dernière itération de la boucle
             if ($key === count($myUnitArray) - 1) {
                 echo '
                     </div>
